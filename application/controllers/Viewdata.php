@@ -49,6 +49,7 @@ class Viewdata extends CI_Controller
 	{	
 		$data['title'] = 'Edit Data';
 		$data['edit'] = $this->modeldata->tarik_data($id);
+		// var_dump($id);
 
 		$this->form_validation->set_rules('nim', 'Nim', 'required');
 		$this->form_validation->set_rules('nama', 'Nama', 'required');

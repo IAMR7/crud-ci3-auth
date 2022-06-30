@@ -29,13 +29,14 @@
 				      	<input type="date" class="form-control" id="tgllahir" name="tgllahir" value="<?php echo $edit['tgllahir']; ?>">
 				      	<?php echo form_error('tgllahir', '<small class="text-danger pl-3">', '</small>'); ?>
 				      </td>
+					
 				      <td>
-				      	<input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" value="<?php echo $edit['jeniskelamin']; ?>">
+				      	<input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" <?php echo set_value('jeniskelamin',$edit['jeniskelamin']) == "laki-laki" ? "checked" : ""; ?> value="<?php echo $edit['jeniskelamin']; ?>">
 				      	<label class="form-check-label">Laki - laki</label>
 				      	<?php echo form_error('jeniskelamin', '<small class="text-danger pl-3">', '</small>'); ?>
 				      </td>
 				      <td>
-				      	<input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" value="<?php echo $edit['jeniskelamin']; ?>">
+				      	<input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" <?php echo set_value('jeniskelamin',$edit['jeniskelamin']) == "perempuan" ? "checked" : ""; ?> value="<?php echo $edit['jeniskelamin']; ?>">
 				      	<label class="form-check-label">Perempuan</label>
 				      	<?php echo form_error('jeniskelamin', '<small class="text-danger pl-3">', '</small>'); ?>
 				      </td>
