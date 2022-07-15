@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Login</title>
+  <title>Reza Book - Login</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url() ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,19 +43,16 @@
 
                   <form method="post" action="<?php echo base_url("Auth")?>" class="user">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control form-control-user" placeholder="Enter Email Address...">
+                      <input type="email" name="email" class="form-control form-control-user" placeholder="Masukkan email ...">
                     </div>
                     <div class="form-group">
-                      <input type="password" name="password" class="form-control form-control-user" placeholder="Password">
+                      <input type="password" name="password" class="form-control form-control-user" placeholder="Masukkan Password ...">
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
                   </form>
 
                   <hr>
-                  <div class="text-center">
-                    <a class="small" href="">Create an Account!</a>
-                  </div>
                 </div>
               </div>
             </div>

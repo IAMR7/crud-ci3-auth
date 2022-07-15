@@ -60,6 +60,13 @@
 <!-- Page level custom scripts -->
 <script src="<?php echo base_url() ?>/assets/js/demo/chart-area-demo.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/demo/chart-pie-demo.js"></script>
+<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready( function () {
+    $('#mytable').DataTable();
+} );
+</script>
 
 </body>
 

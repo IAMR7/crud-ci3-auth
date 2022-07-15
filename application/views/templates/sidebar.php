@@ -13,8 +13,8 @@
 <hr class="sidebar-divider my-0">
 
 <!-- Nav Item - Dashboard -->
-<li class="nav-item <?php if($this->uri->segment(2)=="admin"){echo "active";}?>">
-  <a class="nav-link" href="<?php echo base_url(); ?>admin/admin">
+<li class="nav-item <?php if($this->uri->segment(1)=="admin"){echo "active";}?>">
+  <a class="nav-link" href="<?php echo base_url(); ?>admin">
     <i class="fas fa-fw fa-home"></i>
     <span>Home</span></a>
 </li>
@@ -24,20 +24,13 @@
 
 <!-- Heading -->
 <div class="sidebar-heading">
-  Manage Users
+  Management Umum
 </div>
 
-<li class="nav-item <?php if($this->uri->segment(2)=="admin_data_admin"){echo "active";}?>">
-  <a class="nav-link" href="<?php echo base_url(); ?>admin/admin_data_admin">
-    <i class="fas fa-fw fa-user-tie"></i>
-    <span>Admin</span>
-  </a>
-</li>
-
-<li class="nav-item <?php if($this->uri->segment(2)=="admin_data_mahasiswa"){echo "active";}?>">
-  <a class="nav-link" href="<?php echo base_url(); ?>admin/admin_data_mahasiswa">
-    <i class="fas fa-fw fa-user-graduate"></i>
-    <span>Mahasiswa</span>
+<li class="nav-item <?php if($this->uri->segment(1)=="buku"){echo "active";}?>">
+  <a class="nav-link" href="<?php echo base_url(); ?>buku">
+    <i class="fas fa-fw fa-book-open"></i>
+    <span>Daftar Buku</span>
   </a>
 </li>
 

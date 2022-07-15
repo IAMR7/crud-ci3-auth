@@ -81,7 +81,7 @@ class Modeladmin extends CI_Model
 
 	
 
-	public function edit_data_mahasiswa()
+	public function edit_data_mahasiswa($foto)
 	{
 
 		$data = [
@@ -90,7 +90,7 @@ class Modeladmin extends CI_Model
 					'alamat'		=>	$this->input->post('alamat'),
 					'notelp'		=>	$this->input->post('notelp'),
 					'email'			=>	$this->input->post('email'),
-					// 'foto'			=>	$this->input->post('foto'),
+					'foto'			=>	$foto,
 				];
 
 		$this->db->where('id', $this->input->post('id'));

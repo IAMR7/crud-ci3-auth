@@ -3,24 +3,32 @@
 /**
  * 
  */
-class Modelauth extends CI_Model
-{
-	public function cek_login()
-    {
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Modelauth extends CI_Model {
+
+    public function cek_login() {
+
         $email = set_value('email');
         $password = md5(set_value('password'));
-        $result = $this->db->where('email', $email)->where('password', $password)->limit(1)->get('tbl_admin');
+        $hasil = $this->db->where('email', $email)->where('password', $password)->limit(1)->get('tbl_user');
 
-        if ($result->num_rows() > 0) {
+        if($hasil->num_rows() > 0 ) {
 
-            return $result->row();
+            return $hasil->row();
 
         } else {
-            
+
             return array();
+
         }
+
     }
-	
+
 }
+
+/* End of file Modelauth.php */
+
 
 ?>
